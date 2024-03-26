@@ -6,6 +6,9 @@ const contenedor5 = document.querySelector("#contenedor5");
 const contenedor6 = document.querySelector("#contenedor6");
 const contenedor7 = document.querySelector("#contenedor7");
 const contenedor8 = document.querySelector("#contenedor8");
+const contenedor9 = document.querySelector("#contenedor9");
+const contenedor10 = document.querySelector("#contenedor10");
+const contenedortxt = document.querySelector("#contenedortxt");
 
 let completadas=0, pendientes=0;
 
@@ -14,15 +17,15 @@ const tarea1 = "Barrer la casa";
 const estadoTarea1= false;
 
 
-if (estadoTarea1===false){
+if (estadoTarea1===true){
 completadas=completadas+1;
-contenedor1.innerHTML= "<p>" +tarea1+ "</p> <input type='checkbox'checked>"; 
+contenedor1.innerHTML= "<p>" +tarea1+ "</p> <input class='on check'type='checkbox'checked>"; 
 
 }else{
     pendientes=pendientes+1;
-    contenedor1.innerHTML= "<p>" +tarea1+ "</p> <input class='desactivado check' type='checkbox'>";
+    contenedor1.innerHTML= "<p>" +tarea1+ "</p> <input class='check' type='checkbox'>";
+    // contenedor1.innerHTML = `<p class='activado'>${tarea1}</p><input type='checkbox' class='activado boton' /input>`;
 }
-
 
 //tarea 02
 const tarea2 = "Limpiar el celular";
@@ -30,14 +33,12 @@ const estadoTarea2= false;
 
 if (estadoTarea2===true){
     completadas=completadas+1;
-    contenedor2.innerHTML= "<p>" +tarea2+ "</p> <input type='checkbox' checked> "; 
+    contenedor2.innerHTML= "<p>" +tarea2+ "</p> <input class='on check'type='checkbox'checked>"; 
     
     }else{
         pendientes=pendientes+1;
-        contenedor2.innerHTML= "<p>" +tarea2+ "</p> <input type='checkbox'> ";
+        contenedor2.innerHTML= "<p>" +tarea2+ "</p> <input class='check' type='checkbox'> ";
     }
-
-
 
 //tarea 03
 const tarea3 = "Darle comida a Lukas";
@@ -45,11 +46,11 @@ const estadoTarea3= false;
 
 if (estadoTarea3===true){
     completadas=completadas+1;
-    contenedor3.innerHTML= "<p>" +tarea3+ "</p> <input type='checkbox' checked> "; 
+    contenedor3.innerHTML= "<p>" +tarea3+ "</p> <input class='on check'type='checkbox'checked>"; 
     
     }else{
         pendientes=pendientes+1;
-        contenedor3.innerHTML= "<p>" +tarea3+ "</p> <input type='checkbox'> ";
+        contenedor3.innerHTML= "<p>" +tarea3+ "</p> <input class='check' type='checkbox'> ";
     }
 
 //tarea 04
@@ -59,11 +60,11 @@ const estadoTarea4= false;
 
 if (estadoTarea4===true){
     completadas=completadas+1;
-    contenedor4.innerHTML= "<p>" +tarea4+ "</p> <input type='checkbox' checked> "; 
+    contenedor4.innerHTML= "<p>" +tarea4+ "</p> <input class='on check'type='checkbox'checked>"; 
     
     }else{
         pendientes=pendientes+1;
-        contenedor4.innerHTML= "<p>" +tarea4+ "</p> <input type='checkbox'> ";
+        contenedor4.innerHTML= "<p>" +tarea4+ "</p> <input class='check' type='checkbox'> ";
     }
 
 //tarea 05
@@ -71,13 +72,13 @@ if (estadoTarea4===true){
 const tarea5 = "Hacer el trabajo de DYT";
 const estadoTarea5= false;
 
-if (estadoTarea4===true){
+if (estadoTarea5===true){
     completadas=completadas+1;
-    contenedor5.innerHTML= "<p>" +tarea5+ "</p> <input type='checkbox' checked> "; 
+    contenedor5.innerHTML= "<p>" +tarea5+ "</p> <input class='on check'type='checkbox'checked>"; 
     
     }else{
         pendientes=pendientes+1;
-        contenedor5.innerHTML= "<p>" +tarea5+ "</p> <input type='checkbox'> ";
+        contenedor5.innerHTML= "<p>" +tarea5+ "</p> <input class='check' type='checkbox'> ";
     }
 
 //tarea 06
@@ -87,11 +88,11 @@ const estadoTarea6= false;
 
 if (estadoTarea6===true){
     completadas=completadas+1;
-    contenedor6.innerHTML= "<p>" +tarea6+ "</p> <input type='checkbox' checked> "; 
+    contenedor6.innerHTML= "<p>" +tarea6+ "</p> <input class='on check'type='checkbox'checked>"; 
     
     }else{
         pendientes=pendientes+1;
-        contenedor6.innerHTML= "<p>" +tarea6+ "</p> <input type='checkbox'> ";
+        contenedor6.innerHTML= "<p>" +tarea6+ "</p> <input class='check' type='checkbox'> ";
     }
 
  //tarea 07
@@ -101,11 +102,11 @@ const estadoTarea7= false;
 
 if (estadoTarea7===true){
     completadas=completadas+1;
-    contenedor7.innerHTML= "<p>" +tarea7+ "</p> <input type='checkbox' checked> "; 
+    contenedor7.innerHTML= "<p>" +tarea7+ "</p> <input class='on check'type='checkbox'checked>"; 
     
     }else{
         pendientes=pendientes+1;
-        contenedor7.innerHTML= "<p>" +tarea7+ "</p> <input type='checkbox'> ";
+        contenedor7.innerHTML= "<p>" +tarea7+ "</p> <input class='check' type='checkbox'> ";
     }
 
 //tarea 08
@@ -113,13 +114,13 @@ if (estadoTarea7===true){
 const tarea8 = "Consentir a Lukas";
 const estadoTarea8= false;
 
-if (estadoTarea7===true){
+if (estadoTarea8===true){
     completadas=completadas+1;
-    contenedor8.innerHTML= "<p>" +tarea8+ "</p> <input type='checkbox' checked> "; 
+    contenedor8.innerHTML= "<p>" +tarea8+ "</p> <input class='on check'type='checkbox'checked>"; 
     
     }else{
         pendientes=pendientes+1;
-        contenedor8.innerHTML= "<p>" +tarea8+ "</p> <input type='checkbox'> ";
+        contenedor8.innerHTML= "<p>" +tarea8+ "</p> <input class='check' type='checkbox'> ";
     }
 
 //tarea 09
@@ -129,27 +130,38 @@ const estadoTarea9= false;
 
 if (estadoTarea9===true){
     completadas=completadas+1;
-    contenedor9.innerHTML= "<p>" +tarea9+ "</p> <input type='checkbox' checked> "; 
+    contenedor9.innerHTML= "<p>" +tarea9+ "</p> <input class='on check'type='checkbox'checked>"; 
     
     }else{
         pendientes=pendientes+1;
-        contenedor9.innerHTML= "<p>" +tarea9+ "</p> <input type='checkbox'> ";
+        contenedor9.innerHTML= "<p>" +tarea9+ "</p> <input class='check' type='checkbox'> ";
     }
 
     //tarea 10
 
 const tarea10 = "Planchar ropa";
-const estadoTarea10= false;
+const estadoTarea10 = false;
 
 if (estadoTarea10===true){
     completadas=completadas+1;
-    contenedor10.innerHTML= "<p>" +tarea10+ "</p> <input type='checkbox' checked> "; 
+    contenedor10.innerHTML= "<p>" +tarea10+ "</p> <input class='on check'type='checkbox'checked>"; 
     
     }else{
         pendientes=pendientes+1;
-        contenedor10.innerHTML= "<p>" +tarea10+ "</p> <input type='checkbox'> ";
+        contenedor10.innerHTML= "<p>" +tarea10+ "</p> <input class='check' type='checkbox'> ";
     }
 
+    contenedor1.addEventListener('click', () => {
+        contenedor1.checked = !checkbox.checked;
+        completadas=completadas+1;
+      });
+
+      contenedor1.addEventListener('unclick', () => {
+        contenedor1.checked = !checkbox;
+        pendientes=pendientes+1;
+      });
+
+    contenedortxt.innerHTML= "Completadas: " +completadas+ " No completadas: "+pendientes;
 
 
 
